@@ -12,6 +12,7 @@ public class Main {
             System.out.println("1 - Display All Guests");
             System.out.println("2 - Add Guest");
             System.out.println("3 - Remove Guest");
+            System.out.println("4 - Exit");
             System.out.println("Option: ");
             int option = scanner.nextInt();
             System.out.println();
@@ -20,8 +21,10 @@ public class Main {
                 for (int i = 0; i < guests.length; i++) {
                     System.out.println(guests[i]);
                 }
+            } else if (option==4) {
+                break;
             }
         } while (true);
-
+        System.out.println("Exiting...");
     }
 }
