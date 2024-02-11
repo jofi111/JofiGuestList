@@ -23,9 +23,14 @@ public class Main {
                 }
             }
             else if (option==2) {
-                System.out.println("Name: ");
-                String name = scanner.next();
-                guests[0]=name;
+                for (int i = 0; i < guests.length; i++) {
+                    if (guests[i] == null) {
+                        System.out.println("Name: ");
+                        String name = scanner.next();
+                        guests[i] = name;
+                        break;
+                    }
+                }
             }
             else if (option==4) {
                 break;
