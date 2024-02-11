@@ -9,9 +9,9 @@ public class Main {
 
             guests[0]="Hans";
             guests[1]="Marco";
-            guests[2]="Fred";
+            guests[2]="Molly";
             guests[3]="Ann";
-            guests[4]="Molly";
+            guests[4]="Fred";
 
         do {
             System.out.println();
