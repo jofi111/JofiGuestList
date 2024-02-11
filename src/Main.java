@@ -7,6 +7,12 @@ public class Main {
             String[] guests = new String[10];
             Scanner scanner = new Scanner(System.in);
 
+            guests[0]="Hans";
+            guests[1]="Marco";
+            guests[2]="Fred";
+            guests[3]="Ann";
+            guests[4]="Molly";
+
         do {
             System.out.println();
             System.out.println("1 - Display All Guests");
