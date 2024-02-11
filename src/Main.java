@@ -35,7 +35,7 @@ public class Main {
                 System.out.println("Name: ");
                 String name= scanner.next();
                 for (int i = 0; i < guests.length; i++) {
-                    if (guests[i].equals(name)) {
+                    if (guests[i]!=null && guests[i].equals(name)) {
                         guests[i] = null;
                         break;
                     }
