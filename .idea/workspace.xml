@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="pridani add guest">
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="odstraneni nadbytecne promenne v add guest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -145,7 +145,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707667005988</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="zamezeni prepisu jmen na indexu 0">
+      <option name="closed" value="true" />
+      <created>1707667538405</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707667538405</updated>
+    </task>
+    <task id="LOCAL-00009" summary="odstraneni nadbytecne promenne v add guest">
+      <option name="closed" value="true" />
+      <created>1707667807374</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707667807374</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +187,8 @@
     <MESSAGE value="wrap pomoci ctrl alt t / do-while" />
     <MESSAGE value="pridani exit / break do menu pro ukonceni programu" />
     <MESSAGE value="pridani add guest" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani add guest" />
+    <MESSAGE value="zamezeni prepisu jmen na indexu 0" />
+    <MESSAGE value="odstraneni nadbytecne promenne v add guest" />
+    <option name="LAST_COMMIT_MESSAGE" value="odstraneni nadbytecne promenne v add guest" />
   </component>
 </project>

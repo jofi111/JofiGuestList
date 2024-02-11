@@ -31,6 +31,16 @@ public class Main {
                     }
                 }
             }
+            else if (option==3) {
+                System.out.println("Name: ");
+                String name= scanner.next();
+                for (int i = 0; i < guests.length; i++) {
+                    if (guests[i].equals(name)) {
+                        guests[i] = null;
+                        break;
+                    }
+                }
+            }
             else if (option==4) {
                 break;
             }
