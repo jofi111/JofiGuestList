@@ -26,8 +26,7 @@ public class Main {
                 for (int i = 0; i < guests.length; i++) {
                     if (guests[i] == null) {
                         System.out.println("Name: ");
-                        String name = scanner.next();
-                        guests[i] = name;
+                        guests[i] = scanner.next();
                         break;
                     }
                 }
