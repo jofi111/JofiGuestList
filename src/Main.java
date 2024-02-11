@@ -27,7 +27,6 @@ public class Main {
                 String name = scanner.next();
                 guests[0]=name;
             }
-
             else if (option==4) {
                 break;
             }
