@@ -14,7 +14,7 @@ public class Main {
             guests[4]="Fred";
 
         do {
-            System.out.println();
+            System.out.println("_______________________\n- Menu -\n");
             System.out.println("1 - Display All Guests");
             System.out.println("2 - Add Guest");
             System.out.println("3 - Remove Guest");
@@ -24,6 +24,7 @@ public class Main {
             System.out.println();
 
             if (option == 1) {
+                System.out.println("_______________________\n- Guests -\n");
                 for (int i = 0; i < guests.length; i++) {
                     System.out.println(guests[i]==null ? "- -" : guests[i]);
                 }
