@@ -25,11 +25,7 @@ public class Main {
 
             if (option == 1) {
                 for (int i = 0; i < guests.length; i++) {
-                    if (guests[i] == null) {
-                        System.out.println("- -");
-                    } else {
-                        System.out.println(guests[i]);
-                    }
+                    System.out.println(guests[i]==null ? "- -" : guests[i]);
                 }
             }
             else if (option==2) {
