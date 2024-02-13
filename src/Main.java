@@ -14,12 +14,7 @@ public class Main {
 
         do {
             displayGuests();
-
-            System.out.println("_______________________\n- Menu -\n");
-            System.out.println("1 - Add Guest");
-            System.out.println("2 - Remove Guest");
-            System.out.println("3 - Exit");
-            System.out.println("Option: ");
+            displayMenu();
 
             int option = scanner.nextInt();
 
@@ -55,5 +50,12 @@ public class Main {
         for (int i = 0; i < guests.length; i++) {
             System.out.println(guests[i] == null ? "- -" : guests[i]);
         }
+    }
+    static void displayMenu() {
+        System.out.println("_______________________\n- Menu -\n");
+        System.out.println("1 - Add Guest");
+        System.out.println("2 - Remove Guest");
+        System.out.println("3 - Exit");
+        System.out.println("Option: ");
     }
 }

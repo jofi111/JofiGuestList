@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="zobrazeni seznamu hostu predelano do samostatne metody">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="zobrazeni seznamu hostu predelano do samostatne metody, uprava">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -234,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707837207165</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="zobrazeni seznamu hostu predelano do samostatne metody, uprava">
+      <option name="closed" value="true" />
+      <created>1707837951386</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1707837951386</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,6 +277,7 @@
     <MESSAGE value="vizualni oddelovac menu a guests" />
     <MESSAGE value="automaticke zobrazeni seznamu hostu a menu (i po kazde editaci)" />
     <MESSAGE value="zobrazeni seznamu hostu predelano do samostatne metody" />
-    <option name="LAST_COMMIT_MESSAGE" value="zobrazeni seznamu hostu predelano do samostatne metody" />
+    <MESSAGE value="zobrazeni seznamu hostu predelano do samostatne metody, uprava" />
+    <option name="LAST_COMMIT_MESSAGE" value="zobrazeni seznamu hostu predelano do samostatne metody, uprava" />
   </component>
 </project>
