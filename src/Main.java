@@ -13,10 +13,7 @@ public class Main {
         guests[4] = "Fred";
 
         while (true) {
-            System.out.println("_______________________\n- Guests -\n");
-            for (int i = 0; i < guests.length; i++) {
-                System.out.println(guests[i] == null ? "- -" : guests[i]);
-            }
+            displayGuests(guests);
 
             System.out.println("_______________________\n- Menu -\n");
             System.out.println("1 - Add Guest");
@@ -50,6 +47,13 @@ public class Main {
             } else {
                 System.out.println("Invalid option. Please choose 1, 2 or 3.");
             }
+        }
+    }
+
+    public static void displayGuests(String[] guests) {
+        System.out.println("_______________________\n- Guests -\n");
+        for (int i = 0; i < guests.length; i++) {
+            System.out.println(guests[i] == null ? "- -" : guests[i]);
         }
     }
 }

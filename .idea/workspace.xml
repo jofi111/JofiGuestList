@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="vizualni oddelovac menu a guests">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="automaticke zobrazeni seznamu hostu a menu (i po kazde editaci)">
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -218,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707735835105</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="automaticke zobrazeni seznamu hostu a menu (i po kazde editaci)">
+      <option name="closed" value="true" />
+      <created>1707836599156</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707836599157</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +259,7 @@
     <MESSAGE value="zobrazeni dvou pomlcek misto null" />
     <MESSAGE value="zjednoduseni podminky na 1 radek - zobrazeni dvou pomlcek misto null" />
     <MESSAGE value="vizualni oddelovac menu a guests" />
-    <option name="LAST_COMMIT_MESSAGE" value="vizualni oddelovac menu a guests" />
+    <MESSAGE value="automaticke zobrazeni seznamu hostu a menu (i po kazde editaci)" />
+    <option name="LAST_COMMIT_MESSAGE" value="automaticke zobrazeni seznamu hostu a menu (i po kazde editaci)" />
   </component>
 </project>
