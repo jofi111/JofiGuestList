@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class Main {
     static String[] guests = new String[10];
+    static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-
         guests[0] = "Hans";
         guests[1] = "Marco";
         guests[2] = "Molly";
@@ -15,8 +14,7 @@ public class Main {
         do {
             displayGuests();
             displayMenu();
-
-            int option = scanner.nextInt();
+            int option = getOption();
 
             if (option == 1) {
                 System.out.println("Name: ");
@@ -56,6 +54,11 @@ public class Main {
         System.out.println("1 - Add Guest");
         System.out.println("2 - Remove Guest");
         System.out.println("3 - Exit");
+    }
+    static int getOption() {
         System.out.println("Option: ");
+        int option = scanner.nextInt();
+        System.out.println();
+        return option;
     }
 }
