@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
+    static String[] guests = new String[10];
     public static void main(String[] args) {
 
-        String[] guests = new String[10];
         Scanner scanner = new Scanner(System.in);
 
         guests[0] = "Hans";
@@ -12,8 +12,8 @@ public class Main {
         guests[3] = "Ann";
         guests[4] = "Fred";
 
-        while (true) {
-            displayGuests(guests);
+        do {
+            displayGuests();
 
             System.out.println("_______________________\n- Menu -\n");
             System.out.println("1 - Add Guest");
@@ -47,10 +47,10 @@ public class Main {
             } else {
                 System.out.println("Invalid option. Please choose 1, 2 or 3.");
             }
-        }
+        } while (true);
     }
 
-    public static void displayGuests(String[] guests) {
+    static void displayGuests() {
         System.out.println("_______________________\n- Guests -\n");
         for (int i = 0; i < guests.length; i++) {
             System.out.println(guests[i] == null ? "- -" : guests[i]);
