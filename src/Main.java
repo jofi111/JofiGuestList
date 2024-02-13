@@ -46,7 +46,7 @@ public class Main {
     static void displayGuests() {
         System.out.println("_______________________\n- Guests -\n");
         for (int i = 0; i < guests.length; i++) {
-            System.out.println(guests[i] == null ? "- -" : guests[i]);
+            System.out.println((i+1) + ". " + (guests[i] == null ? "- -" : guests[i]));
         }
     }
     static void displayMenu() {
