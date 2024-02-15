@@ -50,13 +50,13 @@ public class Main {
     static int getOption() {
         System.out.println("Option: ");
         int option = scanner.nextInt();
-        scanner.nextLine(); //odstrani prebytecne radky
+        scanner.nextLine(); //odstrani prebytecny radek po odenterovani volby (Hitting enter actually produces a newline so “5\n” gets sent as the input. The nextInt() method will read the 5 but will leave the \n. Therefore if you use a nextLine() at some point afterwards, it will immediately read the \n, and the program will continue as though nextLine() was never called.)
         System.out.println();
         return option;
     }
     static void addGuest() {
         System.out.println("Name: ");
-        String name = scanner.next();
+        String name = scanner.nextLine(); //umozni zadat jmeno s mezerou
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] == null) {
                 guests[i] = name;
@@ -80,7 +80,7 @@ public class Main {
         }
     static void insertTestNames() {
         // Ensure not to overwrite non-null entries.
-        String[] testNames = {"Hans", "Marco", "Molly", "Ann", "Fred"};
+        String[] testNames = {"Hans Morrison", "Marco Morgan", "Molly Jones", "Ann Hughes", "Fred Astair"};
         int index = 0;
         for (String testName : testNames) {
             while (index < guests.length && guests[index] != null) {
