@@ -21,7 +21,7 @@ public class Main {
             } else if (option==4) {
                 insertTestNames();
             } else {
-                System.out.println("Invalid option. Please choose 1, 2 or 3.");
+                System.out.println("Invalid option. Please choose 1, 2, 3 or 4.");
             }
         } while (true);
 
@@ -65,24 +65,32 @@ public class Main {
         }
     }
     static void removeGuest() {
-        System.out.println("Name: ");
-        String name = scanner.next();
-        for (int i = 0; i < guests.length; i++) {
-            if (guests[i] != null && guests[i].equals(name)) {
-                //posun jmen za sebe
-                for (int j = i; j < guests.length - 1; j++) {
-                    guests[j] = guests[j + 1];
-                }
-                guests[guests.length - 1] = null;
-                break;
+        System.out.println("Enter guest number to remove: ");
+        int number = scanner.nextInt();
+        int index = number-1;
+
+        if (index>=0 && index< guests.length && guests[index] != null) {
+            for (int i = index; i < guests.length; i++) {
+                guests[i] = guests[i + 1];
+            }
+            guests[guests.length - 1] = null;
+        } else {
+            System.out.println("Invalid guest number.");
             }
         }
-    }
     static void insertTestNames() {
-        guests[0] = "Hans";
-        guests[1] = "Marco";
-        guests[2] = "Molly";
-        guests[3] = "Ann";
-        guests[4] = "Fred";
+        // Ensure not to overwrite non-null entries.
+        String[] testNames = {"Hans", "Marco", "Molly", "Ann", "Fred"};
+        int index = 0;
+        for (String testName : testNames) {
+            while (index < guests.length && guests[index] != null) {
+                index++;
+            }
+            if (index < guests.length) {
+                guests[index] = testName;
+            } else {
+                break; // No more space in the array.
+            }
+        }
     }
 }
