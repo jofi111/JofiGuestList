@@ -5,11 +5,6 @@ public class Main {
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        guests[0] = "Hans";
-/*        guests[1] = "Marco";
-        guests[2] = "Molly";
-        guests[3] = "Ann";
-        guests[4] = "Fred";*/
 
         do {
             displayGuests();
@@ -23,6 +18,8 @@ public class Main {
             } else if (option == 3) {
                 System.out.println("Exiting...");
                 break;
+            } else if (option==4) {
+                insertTestNames();
             } else {
                 System.out.println("Invalid option. Please choose 1, 2 or 3.");
             }
@@ -48,6 +45,7 @@ public class Main {
         System.out.println("1 - Add Guest");
         System.out.println("2 - Remove Guest");
         System.out.println("3 - Exit");
+        System.out.println("4 - Insert 5 testing names");
     }
     static int getOption() {
         System.out.println("Option: ");
@@ -79,5 +77,12 @@ public class Main {
                 break;
             }
         }
+    }
+    static void insertTestNames() {
+        guests[0] = "Hans";
+        guests[1] = "Marco";
+        guests[2] = "Molly";
+        guests[3] = "Ann";
+        guests[4] = "Fred";
     }
 }
