@@ -20,8 +20,10 @@ public class Main {
                 break;
             } else if (option==4) {
                 insertTestNames();
+            } else if (option == 5) {
+                renameGuest();
             } else {
-                System.out.println("Invalid option. Please choose 1, 2, 3 or 4.");
+                System.out.println("Invalid option. Please choose 1, 2, 3, 4 or 5.");
             }
         } while (true);
 
@@ -46,6 +48,7 @@ public class Main {
         System.out.println("2 - Remove Guest");
         System.out.println("3 - Exit");
         System.out.println("4 - Insert 5 testing names");
+        System.out.println("5 - Rename guest");
     }
     static int getOption() {
         System.out.println("Option: ");
@@ -91,6 +94,21 @@ public class Main {
             } else {
                 break; // No more space in the array.
             }
+        }
+    }
+    static void renameGuest() {
+        System.out.println("Enter the number of the guest you want to rename: ");
+        int number = scanner.nextInt();
+        scanner.nextLine(); // Consume the leftover newline
+        int index = number - 1;
+
+        if (index >= 0 && index < guests.length && guests[index] != null) {
+            System.out.println("Enter new name for " + guests[index] + ": ");
+            String newName = scanner.nextLine(); // Read the new name
+            guests[index] = newName;
+            System.out.println("Guest #" + number + " has been renamed to " + newName);
+        } else {
+            System.out.println("Invalid guest number.");
         }
     }
 }
