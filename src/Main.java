@@ -22,8 +22,10 @@ public class Main {
                 insertTestNames();
             } else if (option == 5) {
                 renameGuest();
+            } else if (option == 6) {
+                insertGuestAtPosition();
             } else {
-                System.out.println("Invalid option. Please choose 1, 2, 3, 4 or 5.");
+                System.out.println("Invalid option. Please choose between 1 to 6.");
             }
         } while (true);
 
@@ -49,6 +51,7 @@ public class Main {
         System.out.println("3 - Exit");
         System.out.println("4 - Insert 5 testing names");
         System.out.println("5 - Rename guest");
+        System.out.println("6 - Insert Guest at Position");
     }
     static int getOption() {
         System.out.println("Option: ");
@@ -82,7 +85,7 @@ public class Main {
             }
         }
     static void insertTestNames() {
-        // Ensure not to overwrite non-null entries.
+        // neprepsani jiz existujicich jmen
         String[] testNames = {"Hans Morrison", "Marco Morgan", "Molly Jones", "Ann Hughes", "Fred Astair"};
         int index = 0;
         for (String testName : testNames) {
@@ -92,23 +95,46 @@ public class Main {
             if (index < guests.length) {
                 guests[index] = testName;
             } else {
-                break; // No more space in the array.
+                break; // plne pole
             }
         }
     }
     static void renameGuest() {
         System.out.println("Enter the number of the guest you want to rename: ");
         int number = scanner.nextInt();
-        scanner.nextLine(); // Consume the leftover newline
+        scanner.nextLine(); // odstrani nadbytecny radek po enteru
         int index = number - 1;
 
         if (index >= 0 && index < guests.length && guests[index] != null) {
             System.out.println("Enter new name for " + guests[index] + ": ");
-            String newName = scanner.nextLine(); // Read the new name
+            String newName = scanner.nextLine(); // zadani noveho jmena
             guests[index] = newName;
             System.out.println("Guest #" + number + " has been renamed to " + newName);
         } else {
             System.out.println("Invalid guest number.");
+        }
+    }
+    static void insertGuestAtPosition() {
+        System.out.println("Enter the name of the guest to insert: ");
+        String name = scanner.nextLine(); // zadani noveho jmena
+
+        System.out.println("Enter the position to insert the guest at: ");
+        int position = scanner.nextInt();
+        scanner.nextLine(); // odstrani nadbytecny radek po enteru
+
+        int index = position - 1; // zmena zadaneho cisla na index
+
+        // kontrola platne pozice a alespon jedne volne null pozice pro posun
+        if (index >= 0 && index < guests.length) {
+            // posun jmen v poli k uvolneni pozice pro nove jmeno
+            for (int i = guests.length - 1; i > index; i--) {
+                guests[i] = guests[i - 1];
+            }
+            // hlaska
+            guests[index] = name;
+            System.out.println(name + " has been inserted at position " + position);
+        } else {
+            System.out.println("Invalid position.");
         }
     }
 }

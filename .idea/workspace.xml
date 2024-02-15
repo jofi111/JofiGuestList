@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="odstraneni zobrazovani nulovych pozic">
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="moznost prejmenovat existujiciho hosta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -290,7 +290,55 @@
       <option name="project" value="LOCAL" />
       <updated>1708029808797</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="zobrazeni hlasky pri prazdnem seznamu">
+      <option name="closed" value="true" />
+      <created>1708031077802</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708031077802</updated>
+    </task>
+    <task id="LOCAL-00027" summary="pridani moznosti do menu vygenerovat 5 testovacich jmen">
+      <option name="closed" value="true" />
+      <created>1708031754576</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1708031754576</updated>
+    </task>
+    <task id="LOCAL-00028" summary="pridani moznosti vymazat jmeno zadanim cisla a uprava moznosti vygenerovat 5 testovacich jmen">
+      <option name="closed" value="true" />
+      <created>1708032918768</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1708032918768</updated>
+    </task>
+    <task id="LOCAL-00029" summary="oprava pristupu cyklu v ramci mezi pole">
+      <option name="closed" value="true" />
+      <created>1708033442008</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1708033442008</updated>
+    </task>
+    <task id="LOCAL-00030" summary="moznost zadat jmeno s mezerou, tj. i s prijmenim, odstraneni prebytecneho radku po enteru">
+      <option name="closed" value="true" />
+      <created>1708034574678</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1708034574678</updated>
+    </task>
+    <task id="LOCAL-00031" summary="moznost prejmenovat existujiciho hosta">
+      <option name="closed" value="true" />
+      <created>1708035097235</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1708035097235</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,8 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="zalozeni projektu" />
-    <MESSAGE value="stavba zakladniho menu" />
     <MESSAGE value="wrap pomoci ctrl alt t / do-while" />
     <MESSAGE value="pridani exit / break do menu pro ukonceni programu" />
     <MESSAGE value="pridani add guest" />
@@ -332,6 +378,12 @@
     <MESSAGE value="pridani cislovky pred jmeno hosta" />
     <MESSAGE value="razeni jmen za sebou po odstraneni jmena" />
     <MESSAGE value="odstraneni zobrazovani nulovych pozic" />
-    <option name="LAST_COMMIT_MESSAGE" value="odstraneni zobrazovani nulovych pozic" />
+    <MESSAGE value="zobrazeni hlasky pri prazdnem seznamu" />
+    <MESSAGE value="pridani moznosti do menu vygenerovat 5 testovacich jmen" />
+    <MESSAGE value="pridani moznosti vymazat jmeno zadanim cisla a uprava moznosti vygenerovat 5 testovacich jmen" />
+    <MESSAGE value="oprava pristupu cyklu v ramci mezi pole" />
+    <MESSAGE value="moznost zadat jmeno s mezerou, tj. i s prijmenim, odstraneni prebytecneho radku po enteru" />
+    <MESSAGE value="moznost prejmenovat existujiciho hosta" />
+    <option name="LAST_COMMIT_MESSAGE" value="moznost prejmenovat existujiciho hosta" />
   </component>
 </project>
