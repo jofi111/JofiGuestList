@@ -17,23 +17,9 @@ public class Main {
             int option = getOption();
 
             if (option == 1) {
-                System.out.println("Name: ");
-                String name = scanner.next();
-                for (int i = 0; i < guests.length; i++) {
-                    if (guests[i] == null) {
-                        guests[i] = name;
-                        break;
-                    }
-                }
+                addGuest();
             } else if (option == 2) {
-                System.out.println("Name: ");
-                String name = scanner.next();
-                for (int i = 0; i < guests.length; i++) {
-                    if (guests[i] != null && guests[i].equals(name)) {
-                        guests[i] = null;
-                        break;
-                    }
-                }
+                removeGuest();
             } else if (option == 3) {
                 System.out.println("Exiting...");
                 break;
@@ -41,6 +27,7 @@ public class Main {
                 System.out.println("Invalid option. Please choose 1, 2 or 3.");
             }
         } while (true);
+
     }
 
     static void displayGuests() {
@@ -60,5 +47,29 @@ public class Main {
         int option = scanner.nextInt();
         System.out.println();
         return option;
+    }
+    static void addGuest() {
+        System.out.println("Name: ");
+        String name = scanner.next();
+        for (int i = 0; i < guests.length; i++) {
+            if (guests[i] == null) {
+                guests[i] = name;
+                break;
+            }
+        }
+    }
+    static void removeGuest() {
+        System.out.println("Name: ");
+        String name = scanner.next();
+        for (int i = 0; i < guests.length; i++) {
+            if (guests[i] != null && guests[i].equals(name)) {
+                guests[i] = null;
+                for (int j = i; j < guests.length - 1; j++) {
+                    guests[j] = guests[j + 1];
+                }
+                guests[guests.length - 1] = null;
+                break;
+            }
+        }
     }
 }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="input od uzivatele predelan do samostatne metody getOption">
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="pridani cislovky pred jmeno hosta">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -258,7 +258,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707839611154</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="pridani cislovky pred jmeno hosta">
+      <option name="closed" value="true" />
+      <created>1707840455023</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1707840455023</updated>
+    </task>
+    <task id="LOCAL-00023" summary="pridani cislovky pred jmeno hosta">
+      <option name="closed" value="true" />
+      <created>1707840512798</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1707840512798</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +313,7 @@
     <MESSAGE value="zobrazeni seznamu hostu predelano do samostatne metody, uprava" />
     <MESSAGE value="zobrazeni Menu predelano do samostatne metody displayMenu" />
     <MESSAGE value="input od uzivatele predelan do samostatne metody getOption" />
-    <option name="LAST_COMMIT_MESSAGE" value="input od uzivatele predelan do samostatne metody getOption" />
+    <MESSAGE value="pridani cislovky pred jmeno hosta" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani cislovky pred jmeno hosta" />
   </component>
 </project>
