@@ -33,7 +33,9 @@ public class Main {
     static void displayGuests() {
         System.out.println("_______________________\n- Guests -\n");
         for (int i = 0; i < guests.length; i++) {
-            System.out.println((i+1) + ". " + (guests[i] == null ? "- -" : guests[i]));
+            if (guests[i] != null) {        //netiskne null pozice
+            System.out.println((i+1) + ". " + (guests[i]));
+            }
         }
     }
     static void displayMenu() {
@@ -45,6 +47,7 @@ public class Main {
     static int getOption() {
         System.out.println("Option: ");
         int option = scanner.nextInt();
+        scanner.nextLine(); //odstrani prebytecne radky
         System.out.println();
         return option;
     }
@@ -63,7 +66,7 @@ public class Main {
         String name = scanner.next();
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] != null && guests[i].equals(name)) {
-                guests[i] = null;
+                //posun jmen za sebe
                 for (int j = i; j < guests.length - 1; j++) {
                     guests[j] = guests[j + 1];
                 }
