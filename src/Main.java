@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
         guests[0] = "Hans";
-        guests[1] = "Marco";
+/*        guests[1] = "Marco";
         guests[2] = "Molly";
         guests[3] = "Ann";
-        guests[4] = "Fred";
+        guests[4] = "Fred";*/
 
         do {
             displayGuests();
@@ -32,10 +32,15 @@ public class Main {
 
     static void displayGuests() {
         System.out.println("_______________________\n- Guests -\n");
+        boolean isEmpty = true;
         for (int i = 0; i < guests.length; i++) {
             if (guests[i] != null) {        //netiskne null pozice
             System.out.println((i+1) + ". " + (guests[i]));
+            isEmpty = false;
             }
+        }
+        if (isEmpty) {
+            System.out.println("Guest list is empty.");
         }
     }
     static void displayMenu() {

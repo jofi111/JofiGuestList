@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="pridani cislovky pred jmeno hosta">
+    <list default="true" id="33c4e763-0476-4c9d-a6b3-e4345eadde70" name="Changes" comment="odstraneni zobrazovani nulovych pozic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -274,7 +274,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707840512798</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="razeni jmen za sebou po odstraneni jmena">
+      <option name="closed" value="true" />
+      <created>1708027652277</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1708027652277</updated>
+    </task>
+    <task id="LOCAL-00025" summary="odstraneni zobrazovani nulovych pozic">
+      <option name="closed" value="true" />
+      <created>1708029808797</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1708029808797</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -314,6 +330,8 @@
     <MESSAGE value="zobrazeni Menu predelano do samostatne metody displayMenu" />
     <MESSAGE value="input od uzivatele predelan do samostatne metody getOption" />
     <MESSAGE value="pridani cislovky pred jmeno hosta" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani cislovky pred jmeno hosta" />
+    <MESSAGE value="razeni jmen za sebou po odstraneni jmena" />
+    <MESSAGE value="odstraneni zobrazovani nulovych pozic" />
+    <option name="LAST_COMMIT_MESSAGE" value="odstraneni zobrazovani nulovych pozic" />
   </component>
 </project>
