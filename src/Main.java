@@ -70,7 +70,7 @@ public class Main {
         int index = number-1;
 
         if (index>=0 && index< guests.length && guests[index] != null) {
-            for (int i = index; i < guests.length; i++) {
+            for (int i = index; i < guests.length -1; i++) {
                 guests[i] = guests[i + 1];
             }
             guests[guests.length - 1] = null;
